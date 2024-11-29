@@ -1,0 +1,33 @@
+#include "InputKey.h"
+
+// 키보드 입력받는 함수
+Key InputKey::Input()
+{
+    int input = _getch();
+    if (input == 224)
+    {
+        input = _getch();
+    }
+
+    switch (input)
+    {
+    case Key::UP:
+        return Key::UP;
+    case Key::DOWN:
+        return Key::DOWN;
+    case Key::LEFT:
+        return Key::LEFT;
+    case Key::RIGHT:
+        return Key::RIGHT;
+    case Key::SPACE:
+        return Key::SPACE;
+    case Key::R:
+        return Key::R;
+    case Key::W:
+        return Key::W;
+    default:
+        input;
+        break;
+    }
+    
+}
