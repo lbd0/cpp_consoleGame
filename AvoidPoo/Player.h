@@ -3,17 +3,20 @@
 #include "Inventory.h"
 #include "Unit.h"
 #include "Item.h"
+#include "ConsoleManager.h"
 using namespace std;
 
 class Player
 {
 private:
+	int x;
+	int y;
 	int health;
 	int coin;
 	Inventory inven;
-
+	ConsoleManager console;
 public:
-	Player() : health(2), coin(0) {}
+	Player() : health(3), coin(10000) {}
 	virtual ~Player() = default;
 	void Move(int& x, int& y);
 
@@ -27,5 +30,6 @@ public:
 	void UseItem(const ItemType& type);
 	void ShowCoin() const;
 	void ShowStatus() const;
+	void ShowHealth();
 };
 

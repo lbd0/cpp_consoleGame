@@ -20,6 +20,11 @@ void Inventory::AddItem(Item* item)
 		{
 			it->second += 1;
 		}
+		else
+		{
+			i.second += 1;
+			invenItem.insert(i);
+		}
 	}
 }
 
@@ -41,6 +46,19 @@ void Inventory::UseItem(const ItemType& type)
 			cout << "해당 아이템이 없습니다." << endl;
 		}
 	}
+}
+
+void Inventory::ShowCnt()
+{
+	int x = 68, y = 2;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+	for (const auto& pair : invenItem)
+	{
+		console.GotoXY(x, y);
+		Item* it = pair.first;
+		cout << it->GetName() << ": " << pair.second <<"개";
+		x += 15;
+ 	}
 }
 
 // 인벤토리 출력 함수

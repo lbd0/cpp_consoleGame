@@ -1,6 +1,5 @@
-#include "Inventory.h"
-#include "RainCoat.h"
 #include "GameManager.h"
+
 int main()
 {
 	GameManager gm;

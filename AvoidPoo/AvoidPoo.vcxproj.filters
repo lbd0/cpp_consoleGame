@@ -57,8 +57,8 @@
     <ClInclude Include="GameManager.h">
       <Filter>헤더 파일\Managers</Filter>
     </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>헤더 파일\Managers</Filter>
+    <ClInclude Include="Poo.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -92,8 +92,8 @@
     <ClCompile Include="GameManager.cpp">
       <Filter>소스 파일\Managers</Filter>
     </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>소스 파일\Managers</Filter>
+    <ClCompile Include="Poo.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -14,10 +14,10 @@ enum Key
 // 게임 메뉴
 enum Menu
 {
-	GAME = 26,
-	SHOP = 28,
-	TUTORIAL = 30,
-	QUIT = 32
+	GAME = 32,
+	SHOP = 34,
+	TUTORIAL = 36,
+	QUIT = 38
 };
 
 // 아이템
@@ -26,4 +26,11 @@ enum class ItemType
 	COAT,
 	WIPES,
 	NONE
+};
+
+enum State
+{
+	IDEL,
+	MOVE,
+	DIE
 };

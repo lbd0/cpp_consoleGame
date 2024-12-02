@@ -132,7 +132,7 @@
     <ClInclude Include="InputKey.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Item.h" />
-    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Poo.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RainCoat.h" />
@@ -147,8 +147,8 @@
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Poo.cpp" />
     <ClCompile Include="RainCoat.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="WetWipes.cpp" />
   </ItemGroup>
