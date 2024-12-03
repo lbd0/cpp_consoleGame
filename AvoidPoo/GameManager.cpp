@@ -22,35 +22,107 @@ void GameManager::StartGame()
 // 메인 게임
 void GameManager::MainGame()
 {
-	Inventory inven = player.GetInven();
-	console.DrawGame(0, 0);
+	system("cls");
+	double _time = 0;
+	Inventory inven = player->GetInven();
 	inven.ShowCnt();
-	player.ShowHealth();
+	player->ShowHealth();
+	player->ShowCoin();
 	srand(time(0));
-	// 게임 구현 해야해 ㅡㅡㅡㅡㅡ
-	// 랜덤으로 똥 생성되고 떨어지는거
-	// 충돌체크 -> 생명 닳는 거
-	// 아이템 사용
-	// 코인도 만들어야 하네?
-	int pX = 0, pY = 45;
-	int poX = rand() % 88, poY = 10;
-	vector<int> pooPos;
-	int cX = 0, cY = 30;
+	SettingPoo();
+	SettingCoin();
+	int cX = 0, cY = 10;
+	int index = 0, cindex = 0;
+	int poX = 0, poY = 10;
+
+	bool isColl = false;
 	do
 	{
-		console.DrawCoin(cX, cY);	// 코인
-		player.Move(pX, pY);	// 플레이어 이동
-		poo.MovePoo(poX, poY);	// 똥 이동
+		clock_t start = clock();
+
+		// 떨어지는 똥
+		poX = poos[index].GetX();
+		poos[index].MovePoo(poX, poY);
+		if (poY > 61)
+		{
+			index++;
+			poY = 10;
+		}
+		if (index == poos.size())
+		{
+			index = 0;
+		}
+
+		// 떨어지는 코인
+		cX = coins[cindex].GetX();
+		coins[cindex].MoveCoin(cX, cY);
+		if (cY > 61)
+		{
+			cindex++;
+			cY = 10;
+		}
+		if (cindex == coins.size())
+		{
+			cindex = 0;
+		}
+
+		// 플레이어 이동
+		player->Move();	
 		Sleep(100);
+
+		// 똥과 플레이어 충돌 체크
+		if (player->IsCollision(poX+10, poY+1, Drop::POO))
+		{
+			if (player->GetUseItem())
+			{
+				console.ErasePoo(poX, poY - 1);
+				poY = 61;
+				player->SetUseItem(false);
+			}
+			else
+			{
+				console.ErasePoo(poX, poY - 1);
+				poY = 61;
+				int health = player->GetHealth();
+				health -= 1;
+				player->SetHealth(health);
+				player->ShowHealth();
+				console.ErasePlayer(player->GetX(), player->GetY());
+				console.DrawPlayer(player->GetX(), player->GetY(), State::DIE);
+				Sleep(100);
+				if (player->GetHealth() == 0)
+				{
+					break;
+				}
+			}
+			
+		}
+
+
+		// 코인과 플레이어 충돌 체크
+		if (player->IsCollision(cX+7, cY+1, Drop::COIN))
+		{
+			console.EraseCoin(cX, cY - 1);
+			cY = 61;
+			int coin = player->GetCoin();
+			coin += 1;
+			player->SetCoin(coin);
+			player->ShowCoin();
+		}
+		
+		clock_t end = clock();
+		
+		_time += (double)(end - start) / CLOCKS_PER_SEC;
+		console.DrawGame(0, (int)_time);
+
 	} while (true);
+	
 }
 
 // 상점 시스템
 void GameManager::Shop()
 {
 	system("cls");
-	console.GotoXY(0, 0);
-	player.ShowCoin();
 	int itemNum = console.DrawShop(shop.GetItems());
 	ItemType type;
 	switch (itemNum)
@@ -67,13 +139,63 @@ void GameManager::Shop()
 		StartGame();
 		return;
 	}
-	int coin = player.GetCoin();
-	Inventory inven = player.GetInven();
+	int coin = player->GetCoin();
+	Inventory inven = player->GetInven();
 	shop.BuyItem(type, coin, inven);
-	player.UpdateInven(inven);
-	player.SetCoin(coin);
+	player->UpdateInven(inven);
+	player->SetCoin(coin);
 	Sleep(1000);
 	StartGame();
+}
+
+void GameManager::SettingPoo()
+{
+	int x, index = 0;
+	do
+	{
+		bool isDouble = false;
+		if (index == 9) break;
+		x = rand() % 87;
+		if (poos.empty()) poos.push_back(Poo(x, 10));
+		for (int i = 0; i < poos.size(); i++)
+		{
+			if (x <= poos[i].GetX()+3 && x >= poos[i].GetX()-3)
+			{
+				isDouble = true;
+				break;
+			}
+		}
+		if (!isDouble)
+		{
+			poos.push_back(Poo(x, 10));
+			index++;
+		}
+	} while (true);
+}
+
+void GameManager::SettingCoin()
+{
+	int x, index = 0;
+	do
+	{
+		bool isDouble = false;
+		if (index == 9) break;
+		x = rand() % 87;
+		if (coins.empty()) coins.push_back(Coin(x, 10));
+		for (int i = 0; i < coins.size(); i++)
+		{
+			if (x <= coins[i].GetX() + 3 && x >= coins[i].GetX() - 3)
+			{
+				isDouble = true;
+				break;
+			}
+		}
+		if (!isDouble)
+		{
+			coins.push_back(Coin(x, 10));
+			index++;
+		}
+	} while (true);
 }
 
 

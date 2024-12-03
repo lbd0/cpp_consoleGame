@@ -1,15 +1,21 @@
 #include "Poo.h"
 
+Poo::Poo()
+{ }
+
 void Poo::MovePoo(int& x, int& y)
 {
-	if (y < 45) {
-		console.ErasePoo(x, y - 1);
+	if (y < 60) {
+		console.ErasePoo(x, y-1);
 		console.DrawPoo(x, y);
-		//Sleep(100);
-		y++;
 	}
 	else {
-		console.ErasePoo(x, y - 1);
-		return;
+		console.ErasePoo(x, y-1);
 	}
+	y++;
 }
+
+
+
+
+

@@ -13,7 +13,7 @@ public:
 	void GotoXY(const int& x, const int& y);
 	Menu ChangeScene(int n);
 	Menu DrawIntro();
-	void DrawGame(int best, int time);
+	void DrawGame(int best, double time);
 	void DrawPoo(int x, int y);
 	void ErasePoo(int x, int y);
 	void DrawHealth(int x, int y);

@@ -148,9 +148,8 @@ Menu ConsoleManager::DrawIntro()
 }
 
 // 게임 화면 그리는 함수
-void ConsoleManager::DrawGame(int best, int time)
+void ConsoleManager::DrawGame(int best, double time)
 {
-	system("cls");
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	// 시간 및 기록
 	GotoXY(2, 2);
@@ -164,7 +163,6 @@ void ConsoleManager::DrawGame(int best, int time)
 // 똥 그리기 함수
 void ConsoleManager::DrawPoo(int x, int y)
 {
-	
 	string poo[3] =
 	{
 		{"0001000"},
@@ -266,40 +264,40 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 {
 	int idel_player[15][17] =
 	{
-		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0},
-		{1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1},
-		{1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1},
-		{1,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,1},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,1},
-		{1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1},
-		{1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1},
-		{1,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1},
-		{0,1,0,0,1,1,1,0,0,0,1,1,1,0,0,1,0},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0},
-		{0,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0},
-		{0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0}
+		{0,3,3,0,0,0,0,0,0,0,0,0,0,0,3,3,0},
+		{3,0,0,3,0,0,0,0,0,0,0,0,0,3,0,0,3},
+		{3,0,0,0,3,0,0,3,3,3,0,0,3,0,0,0,3},
+		{3,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,3},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{3,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,3},
+		{3,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,3},
+		{3,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,3},
+		{3,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,3},
+		{0,3,0,0,1,1,1,0,0,0,1,1,1,0,0,3,0},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{0,0,3,3,0,0,0,0,1,0,0,0,0,3,3,0,0},
+		{0,0,0,0,3,3,3,0,0,0,3,3,3,0,0,0,0},
+		{0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0}
 	};
 
 	int move_player[15][17] =
 	{
-		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0},
-		{1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,1},
-		{1,0,0,0,1,0,0,1,1,1,0,0,1,0,0,0,1},
-		{1,0,0,0,0,1,1,0,0,0,1,1,0,0,0,0,1},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{1,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,1},
-		{1,0,1,2,2,1,1,0,0,0,1,1,2,2,1,0,1},
-		{1,0,1,2,2,1,2,1,0,1,2,1,2,2,1,0,1},
-		{1,0,0,1,2,1,2,1,0,1,2,1,2,1,0,0,1},
-		{0,1,0,0,1,1,1,0,0,0,1,1,1,0,0,1,0},
-		{0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0},
-		{0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,0,0},
-		{0,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,0},
-		{0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0}
+		{0,3,3,0,0,0,0,0,0,0,0,0,0,0,3,3,0},
+		{3,0,0,3,0,0,0,0,0,0,0,0,0,3,0,0,3},
+		{3,0,0,0,3,0,0,3,3,3,0,0,3,0,0,0,3},
+		{3,0,0,0,0,3,3,0,0,0,3,3,0,0,0,0,3},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{3,0,1,1,1,1,0,0,0,0,0,1,1,1,1,0,3},
+		{3,0,1,2,2,1,1,0,0,0,1,1,2,2,1,0,3},
+		{3,0,1,2,2,1,2,1,0,1,2,1,2,2,1,0,3},
+		{3,0,0,1,2,1,2,1,0,1,2,1,2,1,0,0,3},
+		{0,3,0,0,1,1,1,0,0,0,1,1,1,0,0,3,0},
+		{0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0},
+		{0,0,3,3,0,0,0,0,1,0,0,0,0,3,3,0,0},
+		{0,0,0,0,3,3,3,0,0,0,3,3,3,0,0,0,0},
+		{0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0}
 	};
 
 	int die_player[15][17] =
@@ -328,15 +326,20 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			GotoXY(x, y++);
 			for (auto& p : pl)
 			{
-				if (p == 0)
+				switch (p)
 				{
+				case 0 :
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
 					cout << "□";
-				}
-				else
-				{
+					break;
+				case 1:
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 					cout << "■";
+					break;
+				case 3:
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+					cout << "■";
+					break;
 				}
 			}
 		}
@@ -347,20 +350,24 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			GotoXY(x, y++);
 			for (auto& p : pl)
 			{
-				if (p == 0)
+				switch (p)
 				{
+				case 0:
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
 					cout << "□";
-				}
-				else if(p == 1)
-				{
+					break;
+				case 1:
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 					cout << "■";
-				}
-				else
-				{
+					break;
+				case 3: 
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+					cout << "■";
+					break;
+				case 2:
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
 					cout << "■";
+					break;
 				}
 			}
 		}
@@ -385,6 +392,58 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 				{
 					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
 					cout << "■";
+				}
+			}
+		}
+		break;
+	case State::RAINCOAT_IDEL:
+		for (auto& pl : idel_player)
+		{
+			GotoXY(x, y++);
+			for (auto& p : pl)
+			{
+				switch (p)
+				{
+				case 0 :
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
+					cout << "□";
+					break;
+				case 1 :
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+					cout << "■";
+					break;
+				case 3:
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
+					cout << "■";
+					break;
+				}
+			}
+		}
+		break;
+	case State::RAINCOAT_MOVE:
+		for (auto& pl : move_player)
+		{
+			GotoXY(x, y++);
+			for (auto& p : pl)
+			{
+				switch (p)
+				{
+				case 0 :
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
+					cout << "□";
+					break;
+				case 1:
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+					cout << "■";
+					break;
+				case 2:
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+					cout << "■";
+					break;
+				case 3:
+					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9);
+					cout << "■";
+					break;
 				}
 			}
 		}

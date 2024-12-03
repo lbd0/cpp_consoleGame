@@ -13,22 +13,28 @@ private:
 	int y;
 	int health;
 	int coin;
+	bool isColl = false;
+	bool useItem = false;
 	Inventory inven;
 	ConsoleManager console;
 public:
-	Player() : health(3), coin(10000) {}
+	Player(int x, int y) : health(3), coin(1000), x(x), y(y) {}
 	virtual ~Player() = default;
-	void Move(int& x, int& y);
-
+	void Move();
+	bool IsCollision(int cx, int cy, Drop drop);
 	int GetHealth() { return health; }
 	void SetHealth(int h) { health = h; }
 	int GetCoin() { return coin; }
 	void SetCoin(int c) { coin = c; }
 	Inventory GetInven() { return inven; }
 	void UpdateInven(Inventory inven) { this->inven = inven; }
+	int GetX() { return x; }
+	int GetY() { return y; }
+	bool GetUseItem() { return useItem; }
+	void SetUseItem(bool u) { useItem = u; }
 
 	void UseItem(const ItemType& type);
-	void ShowCoin() const;
+	void ShowCoin();
 	void ShowStatus() const;
 	void ShowHealth();
 };

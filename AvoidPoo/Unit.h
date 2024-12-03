@@ -28,9 +28,18 @@ enum class ItemType
 	NONE
 };
 
+// 플레이어 상태
 enum State
 {
 	IDEL,
 	MOVE,
-	DIE
+	DIE,
+	RAINCOAT_IDEL,
+	RAINCOAT_MOVE
+};
+
+enum Drop
+{
+	POO,
+	COIN
 };

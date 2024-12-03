@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Coin.h" />
     <ClInclude Include="ConsoleManager.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="InputKey.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="WetWipes.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Coin.cpp" />
     <ClCompile Include="ConsoleManager.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="InputKey.cpp" />

@@ -35,22 +35,35 @@ void Inventory::UseItem(const ItemType& type)
 	{
 		// 인벤토리에서 개수 줄이고
 		Item* item = it.first;
-		if (item->GetType() == type)
+		if (item->GetType() == type && it.second > 0)
 		{
 			it.second -= 1;
 			// 아이템 사용
 			item->Skill();
+			console.GotoXY(30, 5);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
+			cout << item->GetName() << " 아이템을 사용합니다.";
+			ShowCnt();
+			Sleep(500);
+			console.GotoXY(30, 5);
+			cout << "                              ";
 		}
 		else
 		{
+			console.GotoXY(30, 5);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 			cout << "해당 아이템이 없습니다." << endl;
+			Sleep(500);
+			console.GotoXY(30, 5);
+			cout << "                              ";
 		}
 	}
 }
 
+// 게임 화면에서 아이템 개수 출력
 void Inventory::ShowCnt()
 {
-	int x = 68, y = 2;
+	int x = 30, y = 2;
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	for (const auto& pair : invenItem)
 	{
