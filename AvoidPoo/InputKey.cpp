@@ -1,7 +1,7 @@
 #include "InputKey.h"
 
 // 키보드 입력받는 함수
-Key InputKey::Input()
+int InputKey::Input()
 {
     int input = _getch();
     if (input == 224)
@@ -26,7 +26,7 @@ Key InputKey::Input()
     case Key::W:
         return Key::W;
     default:
-        input;
+       return input;
         break;
     }
     

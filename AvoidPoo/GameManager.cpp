@@ -1,5 +1,10 @@
 #include "GameManager.h"
 
+void GameManager::GameInit()
+{
+	player->SetHealth(3);
+}
+
 void GameManager::StartGame()
 {
 	console.Init();		// 콘솔 초기화
@@ -7,16 +12,29 @@ void GameManager::StartGame()
 	switch (menu)
 	{
 	case Menu::GAME:
+		GameInit();
 		MainGame();
 		break;
 	case Menu::SHOP:
 		Shop();
 		break;
 	case Menu::TUTORIAL:
+		console.DrawTutorial();
+		do
+		{
+			int key = InputKey::Input();
+			if (key == Key::SPACE)
+			{
+				StartGame();
+				return;
+			}
+		} while (true);
 		break;
 	case Menu::QUIT:
 		return;
 	}
+	// 메인화면으로 돌아가기
+	
 }
 
 // 메인 게임
@@ -34,16 +52,19 @@ void GameManager::MainGame()
 	int cX = 0, cY = 10;
 	int index = 0, cindex = 0;
 	int poX = 0, poY = 10;
-
 	bool isColl = false;
+	int pSpeed = 1;
+	double speedTime = 0;
+	bool pMoving = false;
 	do
 	{
+		// 시간 측정 시작
 		clock_t start = clock();
 
 		// 떨어지는 똥
 		poX = poos[index].GetX();
-		poos[index].MovePoo(poX, poY);
-		if (poY > 61)
+		pMoving = poos[index].MovePoo(poX, poY, pSpeed);
+		if (pMoving)
 		{
 			index++;
 			poY = 10;
@@ -56,7 +77,7 @@ void GameManager::MainGame()
 		// 떨어지는 코인
 		cX = coins[cindex].GetX();
 		coins[cindex].MoveCoin(cX, cY);
-		if (cY > 61)
+		if (cY >= 61)
 		{
 			cindex++;
 			cY = 10;
@@ -64,24 +85,25 @@ void GameManager::MainGame()
 		if (cindex == coins.size())
 		{
 			cindex = 0;
+			SettingCoin();
 		}
-
 		// 플레이어 이동
 		player->Move();	
-		Sleep(100);
+
+		console.Wait(100);
 
 		// 똥과 플레이어 충돌 체크
 		if (player->IsCollision(poX+10, poY+1, Drop::POO))
 		{
 			if (player->GetUseItem())
 			{
-				console.ErasePoo(poX, poY - 1);
+				console.ErasePoo(poX, poY - pSpeed);
 				poY = 61;
 				player->SetUseItem(false);
 			}
 			else
 			{
-				console.ErasePoo(poX, poY - 1);
+				console.ErasePoo(poX, poY - pSpeed);
 				poY = 61;
 				int health = player->GetHealth();
 				health -= 1;
@@ -92,12 +114,14 @@ void GameManager::MainGame()
 				Sleep(100);
 				if (player->GetHealth() == 0)
 				{
+					if ((int)_time > best) best = (int)_time;
+					int key = console.DrawGameOver(best, (int)_time);
+					if (key == Key::SPACE)
+						StartGame();
 					break;
 				}
 			}
-			
 		}
-
 
 		// 코인과 플레이어 충돌 체크
 		if (player->IsCollision(cX+7, cY+1, Drop::COIN))
@@ -105,16 +129,27 @@ void GameManager::MainGame()
 			console.EraseCoin(cX, cY - 1);
 			cY = 61;
 			int coin = player->GetCoin();
-			coin += 1;
+			coin += coins[index].GetPrice();
 			player->SetCoin(coin);
 			player->ShowCoin();
 		}
 		
+		// 시간 측정 끝
 		clock_t end = clock();
 		
+		speedTime += (double)(end - start) / CLOCKS_PER_SEC;
+		if (speedTime >= 30)
+		{
+			if (pMoving)
+			{
+				if (pSpeed >= 3) pSpeed = 0;
+				pSpeed++;
+				speedTime = 0;
+			}
+		}
 		_time += (double)(end - start) / CLOCKS_PER_SEC;
-		console.DrawGame(0, (int)_time);
-
+		
+		console.DrawGame(best, (int)_time);
 	} while (true);
 	
 }
@@ -123,10 +158,16 @@ void GameManager::MainGame()
 void GameManager::Shop()
 {
 	system("cls");
-	int itemNum = console.DrawShop(shop.GetItems());
+	console.DrawShop(shop.GetItems());
+	int itemNum;
+	cin >> itemNum;
+
 	ItemType type;
 	switch (itemNum)
 	{
+	case 0:
+		StartGame();
+		break;
 	case 1:
 		type = ItemType::COAT;
 		break;
@@ -150,6 +191,9 @@ void GameManager::Shop()
 
 void GameManager::SettingPoo()
 {
+	poos.clear();
+	vector<Poo> temp(poos);
+	temp.swap(poos);
 	int x, index = 0;
 	do
 	{
@@ -170,20 +214,33 @@ void GameManager::SettingPoo()
 			poos.push_back(Poo(x, 10));
 			index++;
 		}
+
+
 	} while (true);
 }
 
 void GameManager::SettingCoin()
 {
+	coins.clear();
+	vector<Coin> ctemp(coins);
+	ctemp.swap(coins);
+
 	int x, index = 0;
 	do
 	{
 		bool isDouble = false;
 		if (index == 9) break;
-		x = rand() % 87;
+		x = rand() % 85;
 		if (coins.empty()) coins.push_back(Coin(x, 10));
 		for (int i = 0; i < coins.size(); i++)
 		{
+			if (!poos.empty())
+			{
+				if (x <= poos[i].GetX() + 3 && x >= poos[i].GetX() - 3)
+				{
+					break;
+				}
+			}
 			if (x <= coins[i].GetX() + 3 && x >= coins[i].GetX() - 3)
 			{
 				isDouble = true;

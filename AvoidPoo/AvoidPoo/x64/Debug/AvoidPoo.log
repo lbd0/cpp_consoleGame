@@ -1,7 +1,3 @@
-﻿  ConsoleManager.cpp
-  GameManager.cpp
-C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\GameManager.cpp(31,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Player.cpp
-  코드를 생성하고 있습니다...
-C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\ConsoleManager.cpp(559,1): warning C4715: 'ConsoleManager::ChangeScene': 모든 제어 경로에서 값을 반환하지는 않습니다.
+﻿  GameManager.cpp
+C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\GameManager.cpp(57,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   AvoidPoo.vcxproj -> C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\x64\Debug\AvoidPoo.exe

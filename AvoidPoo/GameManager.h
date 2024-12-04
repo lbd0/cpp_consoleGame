@@ -17,11 +17,10 @@ private:
 	vector<Coin> coins;
 	Player* player = new Player(0, 45);
 	Shop shop;
+	int best = 0;
 public:
-	GameManager() 
-	{
-		
-	}
+	GameManager() {}
+	void GameInit();
 	void StartGame();
 	void MainGame();
 	void Shop();

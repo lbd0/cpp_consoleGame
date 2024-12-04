@@ -7,13 +7,14 @@ private:
 	ConsoleManager console;
 	int x;
 	int y;
+	int price;
 	vector<Coin> coins;
 public:
 	Coin();
-	Coin(int x, int y) : x(x), y(y) {}
+	Coin(int x, int y);
 	void MoveCoin(int& x, int& y);
 	int GetX() const { return x; }
 	int GetY() const { return y; }
-	void SettingCoin (int n);
+	int GetPrice() const { return price; }
 };
 

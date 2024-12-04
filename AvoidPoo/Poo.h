@@ -9,7 +9,7 @@ private:
 public:
 	Poo();
 	Poo(int x, int y) : x(x), y(y) {}
-	void MovePoo(int& x, int& y);
+	bool MovePoo(int& x, int& y, int speed);
 	int GetX() { return x; }
 	int GetY() { return y; }
 };

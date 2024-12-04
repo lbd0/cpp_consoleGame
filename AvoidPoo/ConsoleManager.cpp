@@ -103,10 +103,13 @@ Menu ConsoleManager::DrawIntro()
 	GotoXY(x, y+6); // y = 38
 	cout << "   종료" << endl;
 
+	GotoXY(10, 50);
+	cout << "이동 : ↑/↓, 선택 : space";
+
 	// 키보드 입력 받아서 메뉴 선택 -> 위/아래 방향키로 이동, 스페이스바로 선택.
 	do
 	{
-		Key key =	InputKey::Input();
+		int key =	InputKey::Input();
 		if (key == Key::SPACE)
 		{
 			return ChangeScene(y);
@@ -148,7 +151,7 @@ Menu ConsoleManager::DrawIntro()
 }
 
 // 게임 화면 그리는 함수
-void ConsoleManager::DrawGame(int best, double time)
+void ConsoleManager::DrawGame(int best, int time)
 {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 7);
 	// 시간 및 기록
@@ -258,6 +261,44 @@ void ConsoleManager::DrawDeath(int x, int y)
 		}
 	}
 }
+
+// 물티슈 아이템 그리는 함수
+void ConsoleManager::DrawWipe(int x, int y)
+{
+	string wipe[10] =
+	{
+		{"0011110000111100"},
+		{"0111111001111110"},
+		{"1111111111111111"},
+		{"0111111111111110"},
+		{"0011111111111100"},
+		{"0001111111111000"},
+		{"0000111111110000"},
+		{"0000011111100000"},
+		{"0000001111000000"},
+		{"0000000110000000"},
+	};
+
+	for (auto& wi : wipe)
+	{
+		GotoXY(x, y++);
+		for (auto& w : wi)
+		{
+			if (w == '0')
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
+				cout << "□";
+			}
+			else
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+				cout << "■";
+			}
+		}
+	}
+}
+
+
 
 // 플레이어 그리는 함수
 void ConsoleManager::DrawPlayer(int x, int y, State state)
@@ -465,7 +506,7 @@ void ConsoleManager::ErasePlayer(int x, int y)
 }
 
 // 상점 그리는 함수
-int ConsoleManager::DrawShop(vector<Item*> items)
+void ConsoleManager::DrawShop(vector<Item*> items)
 {
 		
 		GotoXY(35, 5);
@@ -481,23 +522,29 @@ int ConsoleManager::DrawShop(vector<Item*> items)
 		GotoXY(35, 10);
 		cout << "      ■          ■■■";
 
-		int x = 10, y = 40;
+
+		int tx = 13, ty = 40;
 		int index = 1;
 		for (auto& item : items)
 		{
-			GotoXY(x, y);
-			cout << index++ << ". " << item->GetName() << " 가격 : " << item->GetPrice() << "코인";
-			GotoXY(x, y + 1);
+			GotoXY(tx, ty);
+			cout << index++ << ". " << item->GetName() << " (" << item->GetPrice() << "코인)";
+			GotoXY(tx, ty + 2);
 			cout << "설명: " << item->GetDesc();
-			x += 53;
+			tx += 50;
 		}
+		int rainX = 7, rainY = 20;
+		DrawPlayer(rainX, rainY, State::RAINCOAT_IDEL);
 
+		int wipeX = 60, wipeY = 25;
+		DrawWipe(wipeX, wipeY);
+
+		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+		GotoXY(43, 48);
+		cout << "0. 돌아가기";
 		GotoXY(35, 50);
 		cout << "구매할 아이템을 선택하세요: ";
-		int num;
-		cin >> num;
 
-		return num;
 }
 
 // 코인 그리는 함수
@@ -541,6 +588,166 @@ void ConsoleManager::EraseCoin(int x, int y)
 		}
 	}
 }
+
+// 게임방법 타이틀 그리는 함수
+void ConsoleManager::DrawTutorialTitle(int x, int y)
+{
+	string title[10] =
+	{
+		{"000001010000000100000001000000001"},
+		{"000001010001100100100101000100101"},
+		{"111101010010010100100101000100101"},
+		{"000101010010010100111101100111111"},
+		{"000111010010010100100101000100101"},
+		{"000101010001100100111101000111101"},
+		{"000101010000000100000110000001001"},
+		{"000101010000111100001001000001111"},
+		{"000001010000100100001001000001001"},
+		{"000001010000111100000110000001111"},
+	};
+
+	for (auto& ti : title)
+	{
+		GotoXY(x, y++);
+		for (auto& t : ti)
+		{
+			if (t == '0')
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
+				cout << "□";
+			}
+			else
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
+				cout << "■";
+			}
+		}
+	}
+
+} 
+
+// 게임 방법 그리는 함수
+void ConsoleManager::DrawTutorial()
+{
+	system("cls");
+	DrawTutorialTitle(15, 3);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	GotoXY(15, 15);
+	cout << "1. 플레이어는 좌우 방향키를 이용하여 좌우로 움직일 수 있습니다.";
+	GotoXY(15, 17);
+	cout << "2. 똥을 3번 맞으면 GameOver!";
+	GotoXY(15, 19);
+	cout << "3. 코인을 맞으면 코인을 얻을 수 있습니다. (금액은 랜덤!)";
+	GotoXY(15, 21);
+	cout << "4. 최대한 오랜 시간 똥을 피해 버텨보세요.";
+	GotoXY(15, 24);
+	cout << "---------------------아이템---------------------";
+	GotoXY(15, 26);
+	cout << "1. 우비 (100 코인) : 똥을 단 한 번 막아줍니다.";
+	GotoXY(15, 28);
+	cout << "2. 물티슈 (1000 코인) : 똥을 한 번 닦아줍니다. (생명 +1)";
+	GotoXY(15, 30);
+	cout << "---------------------조작법---------------------";
+	GotoXY(15, 32);
+	cout << "1. 시작 화면";
+	GotoXY(15, 34);
+	cout << "상하 방향키를 이용하여 이동, 스페이스바를 이용하여 선택할 수 있습니다.";
+	GotoXY(15, 36);
+	cout << "2. 상점";
+	GotoXY(15, 38);
+	cout << "아이템의 번호를 입력하여 아이템 구매할 수 있습니다. (1 : 우비, 2 : 물티슈)";
+	GotoXY(15, 40);
+	cout << "상점 1회 이용 시 자동으로 시작 화면으로 이동합니다.";
+	GotoXY(15, 42);
+	cout << "3. 게임";
+	GotoXY(15, 44);
+	cout << "좌우 방향키를 이용하여 플레이어를 제어합니다.";
+	GotoXY(15, 46);
+	cout << "게임 오버 시 스페이스바를 이용하여 시작화면으로 이동할 수 있습니다.";
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 6);
+	GotoXY(40, 50);
+	cout << "> 돌아가기 (space)";
+
+}
+
+// 게임 오버 그리는 함수
+int ConsoleManager::DrawGameOver(int best, int time)
+{
+	int x = 15, y = 17;
+	string gameOver[10] =
+	{
+		{"0000010100000001000000000000000001"},
+		{"0000010100011001000011100001000101"},
+		{"1111010100100101000100010001000101"},
+		{"0001010100100101000100010001000101"},
+		{"0001110100100101000100010001111111"},
+		{"0001010100011001000011100001000101"},
+		{"0001010100000001000001000001000101"},
+		{"0001010100001111000001000001111101"},
+		{"0000010100001001001111111000000001"},
+		{"0000010100001111000000000000000001"}
+	};
+
+	for (auto& ga : gameOver)
+	{
+		GotoXY(x, y++);
+		for (auto& g : ga)
+		{
+			if (g == '0')
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 0);		// 글씨 색상 변경
+				cout << "□";
+			}
+			else
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 4);
+				cout << "■";
+			}
+		}
+	}
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	GotoXY(33, 30);
+	cout << "기록 : " << time << "초";
+	GotoXY(55, 30);
+	cout << "최고 기록 : " << best << "초";
+
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+	GotoXY(43, 35);
+	cout << "> 돌아가기 (space)";
+
+	do
+	{
+		if (_kbhit())
+		{
+			int key = InputKey::Input();
+			if (key == Key::SPACE)
+			{
+				return key;
+			}
+		}
+	} while (true);
+}
+
+void ConsoleManager::Wait(DWORD dwMillisecond)
+{
+	MSG msg;
+	DWORD dwStart;
+	dwStart = GetTickCount();
+
+	while (GetTickCount() - dwStart < dwMillisecond)
+	{
+		while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
+		{
+			TranslateMessage(&msg);
+			DispatchMessage(&msg);
+		}
+	}
+}
+
+
+
 
 // 화면 변경하는 함수
 Menu ConsoleManager::ChangeScene(int n)

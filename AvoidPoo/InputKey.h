@@ -4,6 +4,6 @@
 class InputKey
 {
 public:
-	static Key Input();
+	static int Input();
 };
 

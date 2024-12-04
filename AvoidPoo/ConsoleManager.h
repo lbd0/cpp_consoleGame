@@ -13,15 +13,20 @@ public:
 	void GotoXY(const int& x, const int& y);
 	Menu ChangeScene(int n);
 	Menu DrawIntro();
-	void DrawGame(int best, double time);
+	void DrawGame(int best, int time);
 	void DrawPoo(int x, int y);
 	void ErasePoo(int x, int y);
 	void DrawHealth(int x, int y);
 	void DrawDeath(int x, int y);
+	void DrawWipe(int x, int y);
 	void DrawPlayer(int x, int y, State state);
 	void ErasePlayer(int x, int y);
-	int DrawShop(vector<Item*> items);
+	void DrawShop(vector<Item*> items);
 	void DrawCoin(int x, int y);
 	void EraseCoin(int x, int y);
+	void DrawTutorialTitle(int x, int y);
+	void DrawTutorial();
+	int DrawGameOver(int best, int time);
+	void Wait(DWORD dwMillisecond);
 };
 

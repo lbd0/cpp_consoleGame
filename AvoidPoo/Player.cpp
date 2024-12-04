@@ -14,7 +14,7 @@ void Player::Move()
 	
 	if (_kbhit())
 	{
-		Key key = InputKey::Input();
+		int key = InputKey::Input();
 		switch (key)
 		{
 		case Key::RIGHT:
@@ -23,7 +23,7 @@ void Player::Move()
 				console.GotoXY(x, y);
 				console.ErasePlayer(x, y);
 
-				x += 1;
+				x += 2;
 				console.GotoXY(x, y);
 				if (useItem)
 				{
@@ -33,7 +33,6 @@ void Player::Move()
 				{
 					console.DrawPlayer(x, y, State::MOVE);
 				}
-				//Sleep(100);
 			}
 			break;
 		case Key::LEFT:
@@ -42,7 +41,7 @@ void Player::Move()
 				console.GotoXY(x, y);
 				console.ErasePlayer(x, y);
 
-				x -= 1;
+				x -= 2;
 				console.GotoXY(x, y);
 				if (useItem)
 				{
@@ -52,7 +51,6 @@ void Player::Move()
 				{
 					console.DrawPlayer(x, y, State::MOVE);
 				}
-				//Sleep(100);
 			}
 			break;
 		case Key::R:

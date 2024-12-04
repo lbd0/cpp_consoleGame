@@ -18,7 +18,7 @@ private:
 	Inventory inven;
 	ConsoleManager console;
 public:
-	Player(int x, int y) : health(3), coin(1000), x(x), y(y) {}
+	Player(int x, int y) : health(3), coin(0), x(x), y(y) {}
 	virtual ~Player() = default;
 	void Move();
 	bool IsCollision(int cx, int cy, Drop drop);
