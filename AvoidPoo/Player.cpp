@@ -3,20 +3,25 @@
 // 플레이어 이동 함수
 void Player::Move()
 {
+	// 우비 아이템 사용 중 이라면
 	if (useItem)
 	{
+		// 플레이어 모양 변경
 		console.DrawPlayer(x, y, State::RAINCOAT_IDEL);
 	}
 	else 
 	{
+		// 플레이어 기본 모양
 		console.DrawPlayer(x, y, State::IDEL);
 	}
 	
+	// 키보드 입력이 있으면
 	if (_kbhit())
 	{
 		int key = InputKey::Input();
 		switch (key)
 		{
+			// 플레이어 오른쪽으로 이동
 		case Key::RIGHT:
 			if (x < 66)
 			{
@@ -35,6 +40,7 @@ void Player::Move()
 				}
 			}
 			break;
+			// 왼쪽으로 이동
 		case Key::LEFT:
 			if (x > 0)
 			{
@@ -53,9 +59,11 @@ void Player::Move()
 				}
 			}
 			break;
+			// 우비 아이템 사용
 		case Key::R:
 			UseItem(ItemType::COAT);
 			break;
+			// 물티슈 아이템 사용
 		case Key::W:
 			UseItem(ItemType::WIPES);
 			break;
@@ -82,23 +90,26 @@ bool Player::IsCollision(int cx, int cy, Drop drop)
 void Player::UseItem(const ItemType& type)
 {
 	// 인벤토리에 사용할 아이템 알려주고
-	inven.UseItem(type);
-	// 아이템 종류에 따라 변동 적용
-	switch (type)
+	if (inven.UseItem(type))
 	{
-	case ItemType::COAT:
-		// 우비는 똥 1번 막아줌
-		useItem = true;
-		break;
-	case ItemType::WIPES:
-		// 물티슈는 생명 +1
-		if (health < 3)
+		// 아이템 종류에 따라 변동 적용
+		switch (type)
 		{
-			health += 1;
-			ShowHealth();
+		case ItemType::COAT:
+			// 우비는 똥 1번 막아줌
+			useItem = true;
+			break;
+		case ItemType::WIPES:
+			// 물티슈는 생명 +1
+			if (health < 3)
+			{
+				health += 1;
+				ShowHealth();
+			}
+			break;
 		}
-		break;
 	}
+	
 }
 
 // 코인 출력
@@ -110,7 +121,7 @@ void Player::ShowCoin()
 	cout << coin << "코인";
 }
 
-// 플레이어 상태 출력
+// 플레이어 상태 출력 ( 사용 안 함 )
 void Player::ShowStatus() const
 {
 	cout << "=====플레이어 상태=====" << endl;
@@ -124,12 +135,14 @@ void Player::ShowHealth()
 	console.GotoXY(hX, hY);
 	for (int i = 0; i < health; i++)
 	{
+		// 꽉 찬 하트 출력
 		console.DrawHealth(hX, hY);
 		hX += 11;
 	}
 
 	for (int j = health; j < 3; j++)
 	{
+		// 빈 하트 출력
 		console.DrawDeath(hX, hY);
 		hX += 11;
 	}

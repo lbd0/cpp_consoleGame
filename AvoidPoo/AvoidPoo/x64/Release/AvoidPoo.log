@@ -1,7 +1,7 @@
-﻿  Coin.cpp
+﻿  GameManager.cpp
   코드를 생성하고 있습니다.
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
-C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\ConsoleManager.cpp(766): warning C4715: 'ConsoleManager::ChangeScene': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  All 671 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  2 of 687 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
   코드를 생성했습니다.
   AvoidPoo.vcxproj -> C:\Users\user\Desktop\cpp_consoleGame\AvoidPoo\x64\Release\AvoidPoo.exe

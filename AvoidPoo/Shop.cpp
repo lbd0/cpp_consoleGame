@@ -3,11 +3,9 @@
 // 소멸자
 Shop::~Shop()
 {
-	for (auto& it : items)
-	{
-		delete it;
-		it = nullptr;
-	}
+	items.clear();
+	vector<Item*> temp(items);
+	temp.swap(items);
 }
 
 // 아이템 구매 함수

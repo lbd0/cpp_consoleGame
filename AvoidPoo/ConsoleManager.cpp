@@ -103,6 +103,7 @@ Menu ConsoleManager::DrawIntro()
 	GotoXY(x, y+6); // y = 38
 	cout << "   종료" << endl;
 
+	// 조작법 안내 출력
 	GotoXY(10, 50);
 	cout << "이동 : ↑/↓, 선택 : space";
 
@@ -110,6 +111,7 @@ Menu ConsoleManager::DrawIntro()
 	do
 	{
 		int key =	InputKey::Input();
+		// 메뉴 선택
 		if (key == Key::SPACE)
 		{
 			return ChangeScene(y);
@@ -303,6 +305,7 @@ void ConsoleManager::DrawWipe(int x, int y)
 // 플레이어 그리는 함수
 void ConsoleManager::DrawPlayer(int x, int y, State state)
 {
+	// 기본 플레이어
 	int idel_player[15][17] =
 	{
 		{0,3,3,0,0,0,0,0,0,0,0,0,0,0,3,3,0},
@@ -322,6 +325,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 		{0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0}
 	};
 
+	// 움직이는 플레이어
 	int move_player[15][17] =
 	{
 		{0,3,3,0,0,0,0,0,0,0,0,0,0,0,3,3,0},
@@ -341,6 +345,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 		{0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0}
 	};
 
+	// 똥 맞은 플레이어
 	int die_player[15][17] =
 	{
 		{0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0},
@@ -361,6 +366,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 	};
 	switch(state)
 	{
+		// 기본 플레이어 출력
 	case State::IDEL:
 		for (auto& pl : idel_player)
 		{
@@ -385,6 +391,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			}
 		}
 		break;
+		// 움직이는 플레이어 출력
 	case State::MOVE:
 		for (auto& pl : move_player)
 		{
@@ -413,6 +420,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			}
 		}
 		break;
+		// 똥 맞은 플레이어 출력
 	case State::DIE:
 		for (auto& pl : die_player)
 		{
@@ -437,6 +445,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			}
 		}
 		break;
+		// 우비 아이템 쓴 기본 플레이어
 	case State::RAINCOAT_IDEL:
 		for (auto& pl : idel_player)
 		{
@@ -461,6 +470,7 @@ void ConsoleManager::DrawPlayer(int x, int y, State state)
 			}
 		}
 		break;
+		// 우비 아이템 쓴 움직이는 플레이어
 	case State::RAINCOAT_MOVE:
 		for (auto& pl : move_player)
 		{
@@ -508,7 +518,7 @@ void ConsoleManager::ErasePlayer(int x, int y)
 // 상점 그리는 함수
 void ConsoleManager::DrawShop(vector<Item*> items)
 {
-		
+		// 상점 타이틀 출력
 		GotoXY(35, 5);
 		cout << "  ■    ■    ■■■  ■";
 		GotoXY(35, 6);
@@ -523,8 +533,11 @@ void ConsoleManager::DrawShop(vector<Item*> items)
 		cout << "      ■          ■■■";
 
 
-		int tx = 13, ty = 40;
+		int tx = 13, ty = 40;	// 아이템 출력 위치
+		int rainX = 7, rainY = 20;	// 우비 아이템 그림 출력 위치
+		int wipeX = 60, wipeY = 25	;	// 물티슈 아이템 그림 출력 위치
 		int index = 1;
+		// 상점 아이템 출력
 		for (auto& item : items)
 		{
 			GotoXY(tx, ty);
@@ -533,10 +546,9 @@ void ConsoleManager::DrawShop(vector<Item*> items)
 			cout << "설명: " << item->GetDesc();
 			tx += 50;
 		}
-		int rainX = 7, rainY = 20;
+		// 우비 아이템 그림 출력
 		DrawPlayer(rainX, rainY, State::RAINCOAT_IDEL);
-
-		int wipeX = 60, wipeY = 25;
+		// 물티슈 아이템 그림 출력
 		DrawWipe(wipeX, wipeY);
 
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -717,6 +729,7 @@ int ConsoleManager::DrawGameOver(int best, int time)
 	GotoXY(43, 35);
 	cout << "> 돌아가기 (space)";
 
+	// 스페이스바 입력 시 시작 화면으로 돌아감.
 	do
 	{
 		if (_kbhit())
@@ -729,25 +742,6 @@ int ConsoleManager::DrawGameOver(int best, int time)
 		}
 	} while (true);
 }
-
-void ConsoleManager::Wait(DWORD dwMillisecond)
-{
-	MSG msg;
-	DWORD dwStart;
-	dwStart = GetTickCount();
-
-	while (GetTickCount() - dwStart < dwMillisecond)
-	{
-		while (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
-		{
-			TranslateMessage(&msg);
-			DispatchMessage(&msg);
-		}
-	}
-}
-
-
-
 
 // 화면 변경하는 함수
 Menu ConsoleManager::ChangeScene(int n)

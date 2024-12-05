@@ -3,6 +3,7 @@
 Poo::Poo()
 { }
 
+// ¶Ë ¶³¾îÁö´Â ÇÔ¼ö
 bool Poo::MovePoo(int& x, int& y, int speed)
 {
 	if (y < 60) {

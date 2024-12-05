@@ -1,12 +1,8 @@
 #include "GameManager.h"
 
-void SettingPoo()
-{
-	
-}
-
 int main()
 {
+	srand(time(0));
 	GameManager gm;;
 	gm.StartGame();
 }

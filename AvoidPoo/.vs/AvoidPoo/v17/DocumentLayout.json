@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:ConsoleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:GameManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -19,40 +11,80 @@
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Inventory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Inventory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:InputKey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Shop.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:GameManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:ConsoleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Coin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Shop.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Poo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Poo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:InputKey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:ConsoleManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:WetWipes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:RainCoat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:RainCoat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:InputKey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Unit.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\NPC.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -64,48 +96,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\LabPage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:RainCoat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Poo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Coin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:WetWipes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:InputKey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Poo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:WetWipes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:RainCoat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3A882191-5194-40C4-B576-DBC8B106482A}|AvoidPoo.vcxproj|solutionrelative:Item.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -115,109 +111,271 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameManager.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h",
-              "RelativeDocumentMoniker": "GameManager.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h",
-              "RelativeToolTip": "GameManager.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T07:38:04.302Z"
+              "DocumentIndex": 0,
+              "Title": "GameManager.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.cpp",
+              "RelativeDocumentMoniker": "GameManager.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.cpp",
+              "RelativeToolTip": "GameManager.cpp",
+              "ViewState": "AgIAALcAAAAAAAAAAAAAAMMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-29T07:38:53.329Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Shop.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.h",
-              "RelativeDocumentMoniker": "Shop.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.h",
-              "RelativeToolTip": "Shop.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T00:59:51.093Z"
+              "DocumentIndex": 2,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-29T01:10:40.507Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Inventory.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Inventory.cpp",
               "RelativeDocumentMoniker": "Inventory.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Inventory.cpp",
               "RelativeToolTip": "Inventory.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwFkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T01:42:31.47Z"
+              "WhenOpened": "2024-11-29T01:42:31.47Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Shop.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.cpp",
-              "RelativeDocumentMoniker": "Shop.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.cpp",
-              "RelativeToolTip": "Shop.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T02:01:20.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Coin.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.cpp",
               "RelativeDocumentMoniker": "Coin.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.cpp",
               "RelativeToolTip": "Coin.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-03T05:44:11.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "GameManager.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h",
+              "RelativeDocumentMoniker": "GameManager.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.h",
+              "RelativeToolTip": "GameManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T07:38:04.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ConsoleManager.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.cpp",
               "RelativeDocumentMoniker": "ConsoleManager.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.cpp",
               "RelativeToolTip": "ConsoleManager.cpp",
-              "ViewState": "AgIAAJICAAAAAAAAAIAwwGcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAADABAAAAAAAAAAAAAOgCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T05:34:03.407Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.cpp",
-              "RelativeDocumentMoniker": "GameManager.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\GameManager.cpp",
-              "RelativeToolTip": "GameManager.cpp",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Shop.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.cpp",
+              "RelativeDocumentMoniker": "Shop.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.cpp",
+              "RelativeToolTip": "Shop.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T07:38:53.329Z"
+              "WhenOpened": "2024-11-29T02:01:20.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Coin.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h",
+              "RelativeDocumentMoniker": "Coin.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h",
+              "RelativeToolTip": "Coin.h",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T05:42:55.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InputKey.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h",
+              "RelativeDocumentMoniker": "InputKey.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h",
+              "RelativeToolTip": "InputKey.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T05:20:47.349Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "InputKey.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp",
+              "RelativeDocumentMoniker": "InputKey.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp",
+              "RelativeToolTip": "InputKey.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-29T05:25:42.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T02:55:35.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Poo.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp",
+              "RelativeDocumentMoniker": "Poo.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp",
+              "RelativeToolTip": "Poo.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-02T05:44:07.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Poo.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h",
+              "RelativeDocumentMoniker": "Poo.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h",
+              "RelativeToolTip": "Poo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-02T05:43:10.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Shop.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.h",
+              "RelativeDocumentMoniker": "Shop.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Shop.h",
+              "RelativeToolTip": "Shop.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T00:59:51.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Inventory.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Inventory.h",
               "RelativeDocumentMoniker": "Inventory.h",
               "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Inventory.h",
               "RelativeToolTip": "Inventory.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T01:00:10.718Z"
+              "WhenOpened": "2024-11-29T01:00:10.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
+              "Title": "ConsoleManager.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.h",
+              "RelativeDocumentMoniker": "ConsoleManager.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.h",
+              "RelativeToolTip": "ConsoleManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T05:32:20.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WetWipes.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp",
+              "RelativeDocumentMoniker": "WetWipes.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp",
+              "RelativeToolTip": "WetWipes.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-29T01:22:47.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RainCoat.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp",
+              "RelativeDocumentMoniker": "RainCoat.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp",
+              "RelativeToolTip": "RainCoat.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-29T01:22:51.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RainCoat.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h",
+              "RelativeDocumentMoniker": "RainCoat.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h",
+              "RelativeToolTip": "RainCoat.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T01:01:35.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Item.h",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.h",
+              "RelativeDocumentMoniker": "Item.h",
+              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.h",
+              "RelativeToolTip": "Item.h",
+              "ViewState": "AgIAAA4AAAAAAAAAAIAwwBcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-29T00:59:58.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Unit.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Unit.h",
               "RelativeDocumentMoniker": "Unit.h",
@@ -229,31 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Item.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.h",
-              "RelativeDocumentMoniker": "Item.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.h",
-              "RelativeToolTip": "Item.h",
-              "ViewState": "AgIAAAUAAAAAAAAAAIAwwBMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T00:59:58.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "InputKey.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h",
-              "RelativeDocumentMoniker": "InputKey.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.h",
-              "RelativeToolTip": "InputKey.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T05:20:47.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "NPC.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\NPC.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\NPC.cpp",
@@ -265,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "NPC.h",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\NPC.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\NPC.h",
@@ -277,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "LabPage.cpp",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\LabPage.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Documents\\\uCE74\uCE74\uC624\uD1A1 \uBC1B\uC740 \uD30C\uC77C\\LabPage.cpp",
@@ -289,67 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RainCoat.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h",
-              "RelativeDocumentMoniker": "RainCoat.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.h",
-              "RelativeToolTip": "RainCoat.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T01:01:35.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ConsoleManager.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.h",
-              "RelativeDocumentMoniker": "ConsoleManager.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\ConsoleManager.h",
-              "RelativeToolTip": "ConsoleManager.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-29T05:32:20.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-02T02:55:35.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Poo.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h",
-              "RelativeDocumentMoniker": "Poo.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.h",
-              "RelativeToolTip": "Poo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-02T05:43:10.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Coin.h",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h",
-              "RelativeDocumentMoniker": "Coin.h",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Coin.h",
-              "RelativeToolTip": "Coin.h",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAgwA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T05:42:55.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "WetWipes.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.h",
               "RelativeDocumentMoniker": "WetWipes.h",
@@ -361,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
@@ -370,78 +444,6 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-11-29T00:59:42.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp",
-              "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Player.cpp",
-              "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T01:10:40.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Poo.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp",
-              "RelativeDocumentMoniker": "Poo.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Poo.cpp",
-              "RelativeToolTip": "Poo.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-02T05:44:07.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "InputKey.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp",
-              "RelativeDocumentMoniker": "InputKey.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\InputKey.cpp",
-              "RelativeToolTip": "InputKey.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T05:25:42.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "WetWipes.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp",
-              "RelativeDocumentMoniker": "WetWipes.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\WetWipes.cpp",
-              "RelativeToolTip": "WetWipes.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T01:22:47.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RainCoat.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp",
-              "RelativeDocumentMoniker": "RainCoat.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\RainCoat.cpp",
-              "RelativeToolTip": "RainCoat.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T01:22:51.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Item.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.cpp",
-              "RelativeDocumentMoniker": "Item.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\cpp_consoleGame\\AvoidPoo\\Item.cpp",
-              "RelativeToolTip": "Item.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-29T03:05:09.294Z"
             }
           ]
         }

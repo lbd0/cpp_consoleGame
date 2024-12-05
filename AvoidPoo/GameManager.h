@@ -20,6 +20,7 @@ private:
 	int best = 0;
 public:
 	GameManager();
+	~GameManager();
 	void GameInit();
 	void StartGame();
 	void MainGame();

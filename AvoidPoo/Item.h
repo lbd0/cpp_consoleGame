@@ -21,6 +21,7 @@ public:
 
 	virtual void Skill() { cout << "Item 클래스"; }
 
+	// map에서 필요한 함수들
 	bool operator< (const Item& item) const
 	{
 		return this->type < item.type;

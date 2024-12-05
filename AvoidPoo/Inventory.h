@@ -13,10 +13,11 @@ private:
 	ConsoleManager console;
 public:
 	Inventory();
+	~Inventory();
 	map<Item*,int> GetItem();
 	void SetCnt(Item* i, int n);
 	Item* AddItem(int type);
-	void UseItem(const ItemType& type);
+	bool UseItem(const ItemType& type);
 	void ShowCnt();
 	void ShowInven();
 };
