@@ -1,5 +1,7 @@
 #pragma once
 #include "Item.h"
+#include "RainCoat.h"
+#include "WetWipes.h"
 #include  "ConsoleManager.h"
 #include <map>
 
@@ -10,10 +12,12 @@ private:
 	int count;
 	ConsoleManager console;
 public:
-	Inventory() :count(0) {}
-	void AddItem(Item* item);
+	Inventory();
+	map<Item*,int> GetItem();
+	void SetCnt(Item* i, int n);
+	Item* AddItem(int type);
 	void UseItem(const ItemType& type);
 	void ShowCnt();
-	void ShowInven() const;
+	void ShowInven();
 };
 

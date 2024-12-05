@@ -4,7 +4,7 @@ Coin::Coin(int x, int y)
 {
 	this->x = x;
 	this->y = y;
-	int p = rand() % 100 + 1;
+	int p = rand() % 10 + 1;
 	price = p;
 }
 

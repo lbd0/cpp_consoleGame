@@ -22,7 +22,7 @@ void Shop::BuyItem(const ItemType& type, int& coin, Inventory& inven )
 			{
 				// 아이템 구매
 				coin -= it->GetPrice();
-				inven.AddItem(it);
+				inven.AddItem(it->GetType());
 				cout << it->GetName() << "을 구매하였습니다. 잔액 : " << coin << endl;
 				inven.ShowInven();
 			}

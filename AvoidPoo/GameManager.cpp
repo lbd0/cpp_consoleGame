@@ -1,4 +1,65 @@
 #include "GameManager.h"
+#include <fstream>
+#include <string>
+
+void Save(int best, int coin, Inventory inven)
+{
+	ofstream fout;
+
+	fout.open("save.txt");
+
+	fout << best << endl;
+	fout << coin << endl;
+
+	map<Item*, int> sInven = inven.GetItem();
+	
+	for (auto& save : sInven)
+	{
+		Item* sItem = save.first;
+		int type = sItem->GetType();
+		fout << type << endl;
+		fout << save.second << endl;
+	}
+
+	fout.close();
+}
+
+GameManager::GameManager()
+{
+	// 저장된 최고기록, 코인 불러오기 
+	int b = 0, c = 0;
+
+	ifstream ifs;
+
+	ifs.open("save.txt");
+
+	if (!ifs) return;
+
+	string line;
+	vector<string> save;
+	while (getline(ifs, line))
+	{
+		save.push_back(line);
+	}
+	ifs.close();
+
+	// 저장된 최고기록, 코인 설정 
+	b = stoi(save[0]);
+	c = stoi(save[1]);
+	best = b;
+	player->SetCoin(c);
+
+	// 저장된 인벤토리 불러오기
+	Inventory sInven;
+	Item* it = new Item();
+	for (int i = 2; i < save.size(); i += 2)
+	{
+		it = sInven.AddItem(stoi(save[i]));
+		sInven.SetCnt(it, stoi(save[i+1]));
+	}
+	player->UpdateInven(sInven);
+
+}
 
 void GameManager::GameInit()
 {
@@ -20,6 +81,7 @@ void GameManager::StartGame()
 		break;
 	case Menu::TUTORIAL:
 		console.DrawTutorial();
+		// 메인화면으로 돌아가기
 		do
 		{
 			int key = InputKey::Input();
@@ -31,9 +93,9 @@ void GameManager::StartGame()
 		} while (true);
 		break;
 	case Menu::QUIT:
+		Save(best, player->GetCoin(), player->GetInven());
 		return;
 	}
-	// 메인화면으로 돌아가기
 	
 }
 
@@ -114,7 +176,7 @@ void GameManager::MainGame()
 				Sleep(100);
 				if (player->GetHealth() == 0)
 				{
-					if ((int)_time > best) best = (int)_time;
+					if ((int)_time > best) best = (int)_time;					
 					int key = console.DrawGameOver(best, (int)_time);
 					if (key == Key::SPACE)
 						StartGame();
@@ -158,6 +220,9 @@ void GameManager::MainGame()
 void GameManager::Shop()
 {
 	system("cls");
+	Inventory inven = player->GetInven();
+	player->ShowCoin();
+	inven.ShowInven();
 	console.DrawShop(shop.GetItems());
 	int itemNum;
 	cin >> itemNum;
@@ -167,7 +232,7 @@ void GameManager::Shop()
 	{
 	case 0:
 		StartGame();
-		break;
+		return;
 	case 1:
 		type = ItemType::COAT;
 		break;
@@ -181,10 +246,10 @@ void GameManager::Shop()
 		return;
 	}
 	int coin = player->GetCoin();
-	Inventory inven = player->GetInven();
 	shop.BuyItem(type, coin, inven);
 	player->UpdateInven(inven);
 	player->SetCoin(coin);
+	player->ShowCoin();
 	Sleep(1000);
 	StartGame();
 }
@@ -214,8 +279,6 @@ void GameManager::SettingPoo()
 			poos.push_back(Poo(x, 10));
 			index++;
 		}
-
-
 	} while (true);
 }
 

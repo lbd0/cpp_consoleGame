@@ -1,4 +1,7 @@
 #pragma once
+#include <fstream>
+#include <map>
+
 // 키보드
 enum Key
 {
@@ -21,7 +24,7 @@ enum Menu
 };
 
 // 아이템
-enum class ItemType
+enum ItemType
 {
 	COAT,
 	WIPES,
